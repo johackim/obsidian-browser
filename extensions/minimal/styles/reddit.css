@@ -1,0 +1,21 @@
+/* - Hide the total karma, on top right corner under username - C3 */
+.Rz5N3cHNgTGZsIQJqBfgk { /* FRAGILE */
+  display: none;
+}
+
+/* - De-emphasize the "Get coin" button, on the top right corner - U1*/
+.jEUbSHJJx8vISKpWirlfx { /* FRAGILE */
+  border: none;
+}
+.jEUbSHJJx8vISKpWirlfx svg{ /* FRAGILE */
+  display: none;
+}
+
+/* - Hide the right panel until hover - C2 P2 */
+._1FUNcfOeszr8eruqLxCMcR._10wb7d3rGvj56Gcs4IQWL5{ /* FRAGILE */
+  opacity:0.2;
+  transition: 200ms all ease;
+}
+._1FUNcfOeszr8eruqLxCMcR._10wb7d3rGvj56Gcs4IQWL5:hover{ /* FRAGILE */
+  opacity:1
+}

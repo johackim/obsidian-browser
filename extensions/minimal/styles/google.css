@@ -1,0 +1,24 @@
+/* - Make google logo more discrete - P1 */
+#hplogo, #logo, #navcnt, .cOl4Id{
+  filter: grayscale(1)!important;
+  opacity: .6;
+}
+
+/* - Use text instead of cards on mobile - U1 */
+.NJM3tb, .RRt0Pd{
+    display: none;
+}
+.jfp3ef:last-child{
+    padding-top: 0;
+}
+.uUPGi{
+    box-shadow: none !important;
+    margin: 0 -.1em
+}
+.KP7LCb, .bz1lBb{
+    box-shadow: 0 .05em .4em -.25em;
+}
+/* - Hide floating searchbar - C1 */
+#searchform{
+  position: absolute !important;
+}

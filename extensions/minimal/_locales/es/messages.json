@@ -1,0 +1,10 @@
+{
+	"addonDescription": {
+		"message": "Una experiencia mínima del internet que atrae menos la atención",
+		"description": "Describe la extensión"
+	},
+	"pageActionDefaultTitle": {
+		"message": "Sitio web soportado por minimal",
+		"description": "Visualizado sobre el icono de la extensión"
+	}
+}

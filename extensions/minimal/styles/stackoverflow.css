@@ -1,0 +1,55 @@
+/* - Hide "featured" meta pannel, newsletter prompt, teams prompt - U3 */
+.community-bulletin,
+#newsletter-ad,
+ol.nav-links>li.p6{
+  display: none !important;
+}
+/* - Remove hot network questions - C2 */
+#hot-network-questions{
+  display: none !important;
+}
+/* - Hide badges and reputation from topbar - C3 */
+.my-profile .-badges, .my-profile .-rep{
+  display: none !important;
+}
+
+/* - Remove left content border */
+#content{
+  border: none;
+}
+
+/* - Make top bar's colors fit the background color - P1 */
+.top-bar{
+  border: none;
+  background-color: var(--white);
+}
+.top-bar._fixed {
+  box-shadow: 0 0 .3em .3em var(--white);
+}
+#question-header{
+  border: none;
+}
+
+/* - Make the logo more discrete - P1 */
+.-logo{
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+
+/* - Make related questions colors less bright - U1 */
+.show-votes .sidebar-linked .spacer > a:first-child .answer-votes, .show-votes .sidebar-related .spacer > a:first-child .answer-votes {
+  color: slategrey;
+  background-color: transparent;
+}
+.show-votes .sidebar-linked .spacer > a:first-child .answer-votes.answered-accepted, .show-votes .sidebar-related .spacer > a:first-child .answer-votes.answered-accepted {
+  color: #5fba7d;
+  background-color: transparent;
+}
+.sidebar-related .question-hyperlink {
+  color: slategrey;
+}
+
+/* - Make navigation colors neutral - P1 */
+.nav-links .youarehere .nav-links--link {
+  border: none;
+}

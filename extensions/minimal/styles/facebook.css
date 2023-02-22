@@ -1,0 +1,80 @@
+/* - Remove messaging sidebar and popups from all pages - U2 */
+.poy2od1o.i09qtzwb.n7fi1qx3{
+	display: none;
+}
+
+div[aria-label="Messenger"][role="dialog"]{
+    display: none !important;
+}
+
+/* - Remove stories block - C1 */
+#stories_pagelet_rhc{
+  height: 0;
+  overflow: hidden;
+  margin-bottom: -12px;
+}
+
+/* - Change the navbar color to match the background color - P1 */
+#bluebarRoot>*{
+  box-shadow: 0 .5em .5em #e9ebee;
+}
+#bluebarRoot>#js_x{
+  border: none;
+  background-color: #e9ebee;
+}
+#bluebarRoot ._2s1x, #bluebarRoot ._2s1y{
+  color: #4c4c4c;
+  border: none;
+  background-color: #e9ebee;
+}
+#bluebarRoot ._585- {
+  border: none;
+}
+/* - Change the navbar color to a neutral one on mobile - P1 */
+#MBackNavBar{
+  background-color: rgb(218, 221, 225);
+  color: black!important;
+}
+#header {
+  background-color: rgb(218, 221, 225);
+}
+.popoverOpen{
+  background-color: rgba(0,0,0,0.1) !important
+}
+
+
+/* - Remove unnecessary links in left column - U3 */
+#createNav{
+  display: none;
+}
+a[data-testid="left_nav_item_Watch"],
+a[data-testid="left_nav_item_Marketplace"],
+a[data-testid="left_nav_item_Messenger"],
+#userNav{
+  display: none!important;
+}
+
+/* - Make legal links as visible as other elements in the right colum - U1 */
+._45mq>div:last-child {
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* - Hide the textarea to create a post until you click on "create a post" - U1 */
+._3u13._3e9r ._4zoz._5xv3._4cw._4-u3, ._3u13._3e9r  form{
+  display: none
+}
+._3u13._3e9r._3u14._1b3n ._4zoz._5xv3._4cw._4-u3{
+  display: block
+}
+
+/* - Remove messenger button on mobile browsers - U1 */
+#header ._4g34:nth-child(3){
+  display: none
+}
+
+/* - Make Facebook logo more discrete - P1 */
+a[aria-label="Facebook"][role="link"] svg{
+    filter: opacity(85%) grayscale(100%);
+}

@@ -1,0 +1,27 @@
+/* - Twitter logo is more discrete - P1 */
+div.css-901oao.r-1awozwy>svg{ /* FRAGILE */
+    filter: grayscale(1);
+    opacity: 0.5
+}
+
+/* - Hide the Home tab's "new content" bubble - C3 */
+a[data-testid="AppTabBar_Home_Link"] div div div {
+    display: none;
+}
+
+/* - Tone down the notification tab's "new notification" bubble - C1 */
+body[style*="background-color: rgb(255, 255, 255)"] a[data-testid="AppTabBar_Notifications_Link"] div div div { /* for normal style */
+    background-color: white;
+    border: 1px solid black;
+    color: transparent;
+}
+body[style*="background-color: rgb(21, 32, 43)"] a[data-testid="AppTabBar_Notifications_Link"] div div div { /* for dark style */
+    background-color: white;
+    border: none;
+    color: transparent;
+}
+body[style*="background-color: rgb(0, 0, 0)"] a[data-testid="AppTabBar_Notifications_Link"] div div div { /* for black style */
+    background-color: rgb(217,217,217);
+    border: none;
+    color: transparent;
+}

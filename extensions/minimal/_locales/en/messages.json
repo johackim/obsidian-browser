@@ -1,0 +1,10 @@
+{
+	"addonDescription": {
+		"message": "A minimal, less attention grabbing, internet experience.",
+		"description": "Describe the add-on."
+	},
+	"pageActionDefaultTitle": {
+		"message": "Website supported by minimal",
+		"description": "Displayed when hovering the page action badge."
+	}
+}

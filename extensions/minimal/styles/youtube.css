@@ -1,0 +1,118 @@
+/* - Remove useless suggestion around the video description - C2 */
+#related, #ticket-shelf, #merch-shelf {
+  display: none !important;
+}
+#secondary{
+  width: auto!important; 
+  min-width: 0!important; 
+}
+.ytd-horizontal-card-list-renderer {
+  display: none !important;
+}
+
+/* - Remove trending and premium links - P2 */
+a[href="/feed/trending"], a[href="/feed/trending?disable_polymer=1"], a[href="/premium"] {
+  display: none !important;
+}
+ytd-guide-entry-renderer, .paper-item.ytd-guide-entry-renderer{
+  min-height: auto !important;
+}
+
+/* - Simplify youtube logo to make it more discrete - P1 */
+#country-code, #logo-container .content-region{
+  display: none !important;
+}
+#logo svg, #logo-container .logo, #footer-logo{
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+/* - Remove useless youtube appdrawer - U3 */
+div.ytd-masthead>ytd-topbar-menu-button-renderer:nth-child(2){
+  display: none !important;
+}
+
+/* - Remove end screen video suggestions - P2 C1 */
+.watch-sidebar{
+  display: none !important;
+}
+.videowall-endscreen{
+  display: none !important;
+}
+
+/* - Desaturate thumbnails - U1 */
+.ytd-thumbnail img.yt-img-shadow,
+.ytp-cued-thumbnail-overlay-image{
+  filter: saturate(0.8) contrast(0.8)
+}
+
+/* - Use a neutral color for the bottom video progress bar - P1 */
+.ytp-swatch-background-color {
+  background-color: #fff;
+}
+
+/* - Use a neutral color for the subscribe button - P1 C3 */
+paper-button.ytd-subscribe-button-renderer:not([subscribed]),
+ytd-button-renderer.style-destructive[is-paper-button] {
+  background-color: grey;
+}
+ytd-button-renderer.style-suggestive[is-paper-button]{
+  color: grey;
+  border: none;
+  background: transparent;
+}
+
+/* - Remove the colored border of the join button - P1 C3 */
+ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer{
+  border: none;
+}
+
+/* - Remove bottom right video branding - U3 */
+.iv-branding{
+  display: none
+}
+
+/* - Remove the theater button - U2 */
+.ytp-size-button{
+  display: none !important;
+}
+
+/* - Remove the minify button - U2 */
+.ytp-miniplayer-button{
+  display: none !important;
+}
+
+/* - Remove the "next video" button when the video is not in a playlist - C2 C3 */
+.ytp-next-button{
+  display: none !important;
+}
+.ytp-play-button-playlist+.ytp-next-button{
+  display: inline-block  !important;
+}
+
+/* - Make content elements discrete unless user hover them - U2 */
+#content.style-scope.ytd-rich-item-renderer{
+  transition: 400ms all ease !important;
+  opacity: 0.15;
+}
+#content.style-scope.ytd-rich-item-renderer:hover{
+  opacity: 1;
+}
+
+/* - Change color of activated navbar buttons to black - U1 */
+ytd-mini-guide-entry-renderer[active] .guide-icon.ytd-mini-guide-entry-renderer{
+  color: var(--yt-spec-text-primary);
+}
+ytd-mini-guide-entry-renderer[active] .title.ytd-mini-guide-entry-renderer{
+  color: var(--yt-spec-text-primary);
+}
+
+/* - Remove video thumbnail autoplay - C3 */
+.ytd-moving-thumbnail-renderer{
+  display: none!important
+}
+
+/* - Remove autoplay toggle button - C3 */
+button[data-tooltip-target-id="ytp-autonav-toggle-button"] {
+  display: none !important;
+}

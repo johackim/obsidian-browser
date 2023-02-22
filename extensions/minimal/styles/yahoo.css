@@ -1,0 +1,77 @@
+/* - Remove one of the two topbars - C3 U3 */
+#masterNav{
+    display: none
+}
+
+/* - Make content elements discrete unless user hover them - U2 */
+#Stream>*,
+.stream-items>*,
+.tdv2-wafer-ntk-desktop>*,
+.aside-sticky-col>*,
+#feat-bar{
+    transition: 400ms all ease !important;
+    opacity: 0.15;
+}
+#Stream:hover>*,
+.stream-items:hover>*,
+.tdv2-wafer-ntk-desktop:hover>*,
+.aside-sticky-col:hover>*{
+    opacity: 0.3;
+}
+#Stream>*:hover,
+.stream-items>*:hover,
+.tdv2-wafer-ntk-desktop>*:hover,
+.aside-sticky-col>*:hover,
+#feat-bar:hover{
+    opacity: 1;
+}
+
+/* - Desaturate logo, links and icons - P1 */
+#header-logo, .logo, #logo{
+    filter: grayscale(100%)  brightness(300%);
+}
+
+#atomic .C\(\#4d00ae\) {
+    color: grey;
+}
+
+#header-mail-button svg,
+#header-notification-button svg{
+    fill: grey !important;
+}
+
+/* - Desaturate search bar and remove glowing effect when landing on the page - U1 */
+
+#header-search-form .submit-btn,
+#header-search-input{
+  animation: none;
+}
+#atomic .Bdc\(\$c-fuji-blue-1-c\)\:f:focus,
+.sbq{
+    border-color: #b0b0b0 !important;
+}
+#header-search-form .submit-btn,
+.sbb-wrap{
+  background-color: slategrey !important;
+  border: none;
+}
+
+#header-search-form .submit-btn:hover,
+.sbb-wrap:hover{
+  background-color: lightslategrey !important;
+  border: none;
+}
+
+/* - Desaturate button - U1 P1 */
+
+#atomic .Bdc\(\$c-fuji-grape-jelly\){
+  border-color: slategrey !important;
+}
+.active .active_Bgc\(\$c-fuji-grape-jelly\){
+  background-color: slategrey !important;
+}
+
+/* - Remove duplicate shortcut for mail - U3 */
+a[data-ylk*=MAIL]{
+  display: none
+}

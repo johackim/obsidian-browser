@@ -1,0 +1,116 @@
+/* - Remove main page overwhelming fullpage suggestion - C1 */
+#nav-swmslot, #desktop-banner, #nav-logo .nav-prime-try{
+  display: none;
+}
+/* on mobile too */
+#gwm-Deck-cf{
+    display: none;
+}
+
+/* - Remove product page arbitrary suggestions - C2 */
+#detail-ilm_div{
+  display: none;
+}
+
+/* - Remove other futile suggestions - C2 */
+#sims-consolidated-1_feature_div,
+#sims-consolidated-2_feature_div{
+  display: none;
+}
+
+/* - Use neutral colors for the navbar - P1 */
+/* on mobile */
+#nav-search-form,
+#nav-logobar{
+    background:transparent!important;
+    border: none !important;
+}
+.nav-blueheaven #nav-gwbar,
+.nav-ftr-batmobile #nav-gwbar,
+.glow-subnav-template,
+/* and on desktop */
+#navbar.nav-bluebeacon,
+#nav-belt,
+#nav-main,
+#nav-subnav{
+    background-color: gainsboro !important;
+}
+#nav-subnav{
+    border: none!important;
+}
+#navbar *{
+    color: dimgrey !important;
+}
+.nav-cart-icon, #nav-packard-glow-loc-icon {
+  filter: invert(1) saturate(0);
+  opacity: 0.45;
+}
+#nav-search .nav-search-field {
+    border: 1pt solid lightgrey !important;
+    border-width: 1pt 0 1pt 0!important;
+    border-radius: 0;
+}
+
+.nav-search-submit{
+    background: gainsboro!important;
+}
+.nav-search-submit:hover{
+    background: lightgrey!important;
+}
+
+/* - Make logo more discrete - P1 */
+.nav-logo-base{
+  filter: saturate(0);
+}
+#nav-logo{
+  filter: invert(1) saturate(0);
+  opacity: 0.3;
+}
+
+/* - Make button colors neutral - U1 */
+.a-button:not(.a-button-thumbnail){
+  filter: grayscale(1) !important;
+}
+
+/* - Desaturate orange titles - P1 */
+#AUI_A9AdsMiddleBoxTop h2, #CustomerDiscussions h2, #customer-discussions_feature_div h2, #customer-reviews_feature_div h2, #customerReviewsHeader, #detailpage-click2call-header, #hmdFormDiv h2, #need-help-deciding .secHeader, #pf-fitment-wrapper h2, #revMHLContainer h2, #reviewBucketHeader, #rhfMainHeading, #sponsored-products-dp_feature_div h2, .bucket h2, .cdInlineAskBoxTitle, .cdQuestionAnswerHeader, .pa_componentTitleTest h2, h2.amtcmp, h2.featureHeading, #productDescription_feature_div > h2.default, #siteDirectory h2, #siteDirectory h2 a {
+    color: darkslategrey  !important;
+}
+
+/* - Remove the buy now button on desktop - U1 */
+#submit\.buy-now{
+    display: none;
+}
+/* - Remove the "Pay in x installments free of charge" prompt - U1 */
+#issuancePriceblockAmabot_feature_div{
+    display: none;
+}
+/* - Remove availability information from the the description of the product - C3 */
+#availability {
+    display: none;
+}
+/* - Remove sharing buttons from the product page - U3 */
+#tellAFriendBox_feature_div {
+    display: none;
+}
+
+/* - Remove recently viewed products from a product page - U2 C2 */
+#rhf{
+    display: none
+}
+div.a-row.a-size-base.a-color-secondary > span > .a-color-price {
+    display: none;
+}
+
+#pageContent {
+    background: WhiteSmoke;
+}
+
+/* - Remove the cart right sidebar - U2 */
+#nav-flyout-ewc{
+    display: none !important;
+}
+
+body{
+    padding: 0 !important;
+}
